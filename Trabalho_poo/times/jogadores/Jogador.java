@@ -80,7 +80,6 @@ public class Jogador extends Membro implements IEstatistico {
 
     @Override
     public double calcularSalarioTotal() {
-        // Bônus: R$ 500 por gol e R$ 300 por assistência
         double bonusEstatistico = (estatisticas.getGols() * 500.0) + (estatisticas.getAssistencias() * 300.0);
         return salarioBase + bonusEstatistico;
     }
